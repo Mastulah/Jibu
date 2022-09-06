@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+</head>
+
+<body>
+    <h2>
+        <b>Sign in</b>
+    </h2>
+    <form name="myForm" method="post">
+        
+        <input type="tel" name="Uname" value="" placeholder="Enter your Password" required>
+        <label>Password</label><br>
+        
+        <input type="button" name="log" id="logButton" value="login" onclick="myFunction()">
+
+    </form>
+
+<script>
+    function myFunction()
+    {
+        var a = document.forms["myForm"]["Uname"].value;
+        if(!a)
+            {
+            alert("Invalid Username and Password");
+            }
+            
+        else
+            {alert("Please wait for the OTP code !"); 
+            window.location.href="product.html";
+            alert("Sign-in Succesfully !");
+            
+            }
+    
+    }
+</script>
+
+</body>
+</html>
